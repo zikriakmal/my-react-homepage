@@ -30,18 +30,42 @@ const HomepageContent = () => {
         </div>
         <Atoms.Gap height={20} />
         <div>
-          <FontAwesomeIcon icon={faTwitter} style={{ height: 40, width: 40 }} />
+          <a
+            href="https://twitter.com/zikriakmale"
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <FontAwesomeIcon
+              icon={faTwitter}
+              style={{ height: 40, width: 40, color: "black" }}
+            />
+          </a>
         </div>
         <Atoms.Gap height={20} />
         <div>
-          <FontAwesomeIcon icon={faTiktok} style={{ height: 40, width: 40 }} />
+          <a
+            href={"https://www.tiktok.com/@zikriakmal"}
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <FontAwesomeIcon
+              icon={faTiktok}
+              style={{ height: 40, width: 40, color: "black" }}
+            />
+          </a>
         </div>
         <Atoms.Gap height={20} />
         <div>
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            style={{ height: 40, width: 40 }}
-          />
+          <a
+            href={"https://id.linkedin.com/in/zikri-akmal-santoso-b61455126"}
+            rel={"noreferrer"}
+            target={"_blank"}
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              style={{ height: 40, width: 40, color: "black" }}
+            />
+          </a>
         </div>
       </div>
       <div className={"content-description"} style={{ flex: 3 }}>
@@ -62,7 +86,7 @@ const HomepageContent = () => {
         <p style={{ fontSize: 18, fontWeight: 300, textAlign: "left" }}>
           A Software Developer, Been passionate in programming since 2015,
           playing music for fun, writing programming article, make coding video
-          content, specialized in node.js ,react.js, react native, golang
+          content, specialized in node.js ,react.js, react native, golang.
         </p>
       </div>
       <div style={{ flex: 2 }}>

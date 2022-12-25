@@ -40,7 +40,6 @@
 }
 
 .link-nav:hover {
-    font-weight: "800";
     margin: 0;
     transform: rotate(-20deg);
     color: var(--primary);

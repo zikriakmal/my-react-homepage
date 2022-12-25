@@ -1,6 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../../assets/images/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 import "./style.css";
+import logo from "../../../assets/images/logo.png";
 
 const Header = () => {
   const location = useLocation();
@@ -20,19 +23,20 @@ const Header = () => {
         </div>
         <div style={{ flex: 3 }}>
           <Link
-            href="#"
+            className={"link-nav"}
+            to="#"
             onClick={() => (window.location = "mailto:zikriakmale@gmail.com")}
-            style={{
-              fontSize: 16,
-              fontWeight: "bolder",
-              textDecoration: "none",
-              color: "black",
-            }}
           >
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              height={20}
+              style={{ margin: "0px 10px" }}
+            />
             zikriakmale@gmail.com
           </Link>
         </div>
       </div>
+
       <div className={"right-header"}>
         <Link
           to="/works"
