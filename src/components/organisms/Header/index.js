@@ -9,23 +9,28 @@ const Header = () => {
     <div className={"header"}>
       <div className="left-header">
         <div style={{ flex: 1 }}>
-          <Link to="/" className={"link-nav"}>
+          <Link to="/">
             <img
               src={logo}
               className={"link-nav"}
               alt={"main-logo"}
-              height="70"
+              height="50"
             />
           </Link>
         </div>
         <div style={{ flex: 3 }}>
-          <p
+          <Link
             href="#"
             onClick={() => (window.location = "mailto:zikriakmale@gmail.com")}
-            style={{ fontSize: 16, fontWeight: "bolder" }}
+            style={{
+              fontSize: 16,
+              fontWeight: "bolder",
+              textDecoration: "none",
+              color: "black",
+            }}
           >
             zikriakmale@gmail.com
-          </p>
+          </Link>
         </div>
       </div>
       <div className={"right-header"}>
@@ -40,7 +45,8 @@ const Header = () => {
         <Link
           to="/articles"
           className={
-            "link-nav" + (location.pathname === "/articles" ? " link-active" : "")
+            "link-nav" +
+            (location.pathname === "/articles" ? " link-active" : "")
           }
         >
           Articles
@@ -51,7 +57,7 @@ const Header = () => {
             "link-nav" + (location.pathname === "/resume" ? " link-active" : "")
           }
         >
-          Resume 
+          Resume
         </Link>
       </div>
     </div>
