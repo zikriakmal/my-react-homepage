@@ -2,8 +2,8 @@ import "./styles.css";
 import image from "../../assets/images/ilust.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
   faLinkedin,
+  faMedium,
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
@@ -23,10 +23,16 @@ const HomepageContent = () => {
     <div className={"content"}>
       <div className={"content-media-link fade-in"} style={{ flex: 1 }}>
         <div>
-          <FontAwesomeIcon
-            icon={faFacebook}
-            style={{ height: 40, width: 40 }}
-          />
+          <a
+            href="https://medium.com/@zikriakmale"
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <FontAwesomeIcon
+              icon={faMedium}
+              style={{ height: 40, width: 40, color: "black" }}
+            />
+          </a>
         </div>
         <Atoms.Gap height={20} />
         <div>

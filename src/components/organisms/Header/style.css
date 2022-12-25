@@ -31,8 +31,20 @@
     text-decoration: none;
 }
 
+.mail-nav {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.mail-nav:hover {
+    transform: rotate(-20deg);
+    color: var(--primary);
+}
+
 .link-active {
-    font-weight: "800";
     margin: 0;
     transform: rotate(-10deg);
     color: var(--primary);
@@ -40,10 +52,8 @@
 }
 
 .link-nav:hover {
-    margin: 0;
     transform: rotate(-20deg);
     color: var(--primary);
-    text-decoration: "none";
 }
 
 /* Extra small devices (phones, 600px and down) */

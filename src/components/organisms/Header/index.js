@@ -15,7 +15,7 @@ const Header = () => {
           <Link to="/">
             <img
               src={logo}
-              className={"link-nav"}
+              className={"mail-nav"}
               alt={"main-logo"}
               height="50"
             />
@@ -23,14 +23,14 @@ const Header = () => {
         </div>
         <div style={{ flex: 3 }}>
           <Link
-            className={"link-nav"}
+            className={"mail-nav"}
             to="#"
             onClick={() => (window.location = "mailto:zikriakmale@gmail.com")}
           >
             <FontAwesomeIcon
               icon={faEnvelope}
               height={20}
-              style={{ margin: "0px 10px" }}
+              style={{ margin: "0px 5px" }}
             />
             zikriakmale@gmail.com
           </Link>
