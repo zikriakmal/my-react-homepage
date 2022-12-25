@@ -8,12 +8,13 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { Atoms } from "../../components";
+import App from "../../App";
 
 const HomePage = () => {
   return (
-    <div>
+    <App>
       <HomepageContent />
-    </div>
+    </App>
   );
 };
 
@@ -65,7 +66,7 @@ const HomepageContent = () => {
         </p>
       </div>
       <div style={{ flex: 2 }}>
-        <img className={'fade-in'} height={340} src={image} alt={"profile"} />
+        <img className={"fade-in"} height={340} src={image} alt={"profile"} />
       </div>
     </div>
   );

@@ -1,12 +1,11 @@
 import "./App.css";
-import Homepage from "./pages/HomePage";
 import { Header, Footer } from "./components/organisms";
 
-function App() {
+function App(props) {
   return (
     <div className={"App container"}>
       <Header />
-      <Homepage />
+      {props.children}
       <Footer />
     </div>
   );
