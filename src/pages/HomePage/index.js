@@ -61,7 +61,7 @@ const HomepageContent = () => {
         </div>
         <p style={{ fontSize: 24, fontWeight: 300, textAlign: "left" }}>
           A Software Developer, Been passionate in programming since 2015,
-          playing music for fun, writing code article, make coding video
+          playing music for fun, writing programming article, make coding video
           content, specialized in node.js ,react.js, react native, golang
         </p>
       </div>
