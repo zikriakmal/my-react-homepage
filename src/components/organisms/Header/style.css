@@ -1,0 +1,34 @@
+/* Header Style */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.left-header {
+    display: flex;
+    flex: 2;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.right-header {
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .right-header {
+        visibility: hidden;
+    }
+}

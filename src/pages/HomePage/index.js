@@ -1,5 +1,4 @@
 import "./styles.css";
-import logo from "../../assets/images/logo.png";
 import image from "../../assets/images/ilust.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,39 +7,12 @@ import {
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { Atoms } from "../../components";
 
 const HomePage = () => {
   return (
-    <div className={"container"}>
-      <HomepageHeader />
+    <div>
       <HomepageContent />
-      <HomepageFooter />
-    </div>
-  );
-};
-
-const HomepageHeader = () => {
-  return (
-    <div className={"header"}>
-      <div className="left-header">
-        <div style={{ flex: 1 }}>
-          <img src={logo} alt={"main-logo"} height="40" />
-        </div>
-        <div style={{ flex: 3 }}>
-          <p
-            href="#"
-            onClick={() => (window.location = "mailto:zikriakmale@gmail.com")}
-            style={{ fontSize: 16, fontWeight: "bolder" }}
-          >
-            zikriakmale@gmail.com
-          </p>
-        </div>
-      </div>
-      <div className={"right-header"}>
-        <p style={{ fontWeight: "600" }}>Works</p>
-        <p style={{ fontWeight: "600" }}>Resume</p>
-        <p style={{ fontWeight: "600" }}>Articles</p>
-      </div>
     </div>
   );
 };
@@ -48,19 +20,22 @@ const HomepageHeader = () => {
 const HomepageContent = () => {
   return (
     <div className={"content"}>
-      <div className={"content-media-link"} style={{ flex: 1 }}>
+      <div className={"content-media-link fade-in"} style={{ flex: 1 }}>
         <div>
           <FontAwesomeIcon
             icon={faFacebook}
             style={{ height: 40, width: 40 }}
           />
         </div>
+        <Atoms.Gap height={20} />
         <div>
           <FontAwesomeIcon icon={faTwitter} style={{ height: 40, width: 40 }} />
         </div>
+        <Atoms.Gap height={20} />
         <div>
           <FontAwesomeIcon icon={faTiktok} style={{ height: 40, width: 40 }} />
         </div>
+        <Atoms.Gap height={20} />
         <div>
           <FontAwesomeIcon
             icon={faLinkedin}
@@ -84,22 +59,14 @@ const HomepageContent = () => {
           </p>
         </div>
         <p style={{ fontSize: 24, fontWeight: 300, textAlign: "left" }}>
-          A Software Developer, Been passionate in programming since 2015, playing music for
-          fun, writing code article, make coding video content, specialized in
-          node.js ,react.js, react native, golang
+          A Software Developer, Been passionate in programming since 2015,
+          playing music for fun, writing code article, make coding video
+          content, specialized in node.js ,react.js, react native, golang
         </p>
       </div>
-      <div style={{ flex: 3 }}>
-        <img height={340} src={image} alt={"profile"} />
+      <div style={{ flex: 2 }}>
+        <img className={'fade-in'} height={340} src={image} alt={"profile"} />
       </div>
-    </div>
-  );
-};
-
-const HomepageFooter = () => {
-  return (
-    <div className={"footer"}>
-      <p>Made with ❤️ by zikri akmal </p>
     </div>
   );
 };
